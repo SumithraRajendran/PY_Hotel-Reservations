@@ -76,7 +76,7 @@ def calculate_extra_pay(room_number, end_date):
         print("The extra payment has been done.")
 
 # Book a full day for room 101 on May 13, 2023
-book_full_day(101, datetime.date(2023, 5, 13), "John Doe")
+book_full_day(101, datetime.date(2023, 5, 13), "Sumithra")
 
 # Book half of room 102 for John on May 14, 2023
 book_half_room(102, datetime.date(2023, 5, 14), datetime.date(2023, 5, 15), "Priya")
