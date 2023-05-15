@@ -73,21 +73,22 @@ def calculate_extra_pay(room_number, end_date):
         print("Sorry, the end date cannot be before the original booking end date.")
     else:
         extra_days = (end_date - booked_rooms[room_number]['end_date']).days
+        print("The extra payment has been done.")
 
 # Book a full day for room 101 on May 13, 2023
 book_full_day(101, datetime.date(2023, 5, 13), "John Doe")
 
 # Book half of room 102 for John on May 14, 2023
-book_half_room(102, datetime.date(2023, 5, 14), datetime.date(2023, 5, 15), "John Doe")
+book_half_room(102, datetime.date(2023, 5, 14), datetime.date(2023, 5, 15), "Priya")
 
 # Allot the other half of room 102 to Jane on May 14, 2023
-allot_half_room(102, datetime.date(2023, 5, 14), datetime.date(2023, 5, 15), "Jane Doe")
+allot_half_room(102, datetime.date(2023, 5, 14), datetime.date(2023, 5, 15), "Gajalakshmi")
 
 # Book room 103 for May 16, 2023 to May 18, 2023 for Jane
-book_room(103, datetime.date(2023, 5, 16), datetime.date(2023, 5, 18), "Jane Doe")
+book_room(103, datetime.date(2023, 5, 16), datetime.date(2023, 5, 18), "Rajendran")
 
 # Cancel room 104
 cancel_room(104)
 
-# Calculate extra pay for an overstayed room 101 until May 15, 2023
+# Calculate extra pay for an overstayed room 101 until May 14, 2023
 calculate_extra_pay(101, datetime.date(2023, 5, 15))
