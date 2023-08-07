@@ -10,8 +10,6 @@ Welcome to the Python Hotel Reservations System README. This project is a comman
   - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
